@@ -10,7 +10,7 @@ config_version=5
 
 [application]
 
-config/name="PROJECT V1"
+config/name="23-24.fr.s.s 3 Star-marauder-s-gravity"
 config/features=PackedStringArray("4.2", "GL Compatibility")
 config/icon="res://icon.svg"
 
