@@ -1,22 +1,21 @@
 [gd_scene load_steps=4 format=3 uid="uid://ceux5jrax3osl"]
 
 [ext_resource type="Script" path="res://CharacterBody2D.gd" id="1_myfgm"]
-[ext_resource type="Texture2D" uid="uid://de8lm8ela4lhb" path="res://icon.svg" id="2_t8mk5"]
+[ext_resource type="Texture2D" uid="uid://dd2kgjfoacrdd" path="res://personnage_88_par_88_pixel.png" id="2_odlpb"]
 
-[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_lwaq6"]
-radius = 22.0
-height = 44.0
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_mafb8"]
+size = Vector2(14, 28)
 
 [node name="player" type="CharacterBody2D"]
 position = Vector2(93, 48)
-collision_layer = 2
+collision_layer = 3
 script = ExtResource("1_myfgm")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(5, 13)
-shape = SubResource("CapsuleShape2D_lwaq6")
+position = Vector2(5, 11)
+shape = SubResource("RectangleShape2D_mafb8")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(5, 13)
-scale = Vector2(0.272786, 0.278242)
-texture = ExtResource("2_t8mk5")
+position = Vector2(5, 11)
+scale = Vector2(0.244333, 0.320939)
+texture = ExtResource("2_odlpb")
